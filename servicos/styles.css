@@ -1,0 +1,101 @@
+html {
+  scroll-behavior: smooth;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    position: relative;
+    margin-top: -40px;
+    color: #08697a;
+}
+h2,h3{
+    color: #0D9FBA;
+    margin: 10px;
+    font-size: 1.5em;
+}
+#servicos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    width: 90vw;
+}
+#servicos img{
+    border-radius: 100%;
+}
+hr{
+    border-left-width: 100vw;
+    margin: 20px;
+}
+
+#sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+}
+#sobre i{
+    display: none;
+}
+.conteudo{
+    font-size: 1.1em;
+    margin: 20px;
+}
+.conteudo div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.conteudo img{
+    width: 40%;
+    margin-right: 15px;
+    display: inline;
+}
+.texto_sobre{
+    display: inline;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width:900px){
+    h1{
+        margin-top: 40px;
+    }
+    p{
+        font-size: .8em;
+    }
+    .information{
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+    }
+    #sobre{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #sobre i{
+        display: block;
+        color: black;
+    }
+
+    .conteudo div span{
+        display: none;
+        height: 0;
+        transition: all .8s;
+    }
+    .conteudo .show{
+        display: block;
+        height: 10%;
+        transition: all .8s;
+    }
+}
